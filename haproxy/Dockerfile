@@ -1,4 +1,4 @@
-FROM dockercloud/haproxy:1.5.3
+FROM dockercloud/haproxy:1.6.5
 
 RUN apk add --update \
         bash \
