@@ -3,6 +3,7 @@ FROM dockercloud/haproxy:1.5.3
 RUN apk add --update \
         bash \
         inotify-tools \
+        openssl \
     && rm -rf /var/cache/apk/*
 
 ENV CERT_FOLDER="/certs"
