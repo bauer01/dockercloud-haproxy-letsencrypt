@@ -3,7 +3,11 @@ FROM alpine:edge
 RUN apk add --update \
         bash \
         certbot \
+        py-pip \
     && rm -rf /var/cache/apk/*
+
+# TODO: Test
+RUN pip install argparse packaging
 
 EXPOSE 80
 VOLUME /etc/letsencrypt
